@@ -1,0 +1,42 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+    
+    <link rel="icon" type="image/png" href="/images/favicon.png?v=2">
+    <!-- Styles -->
+    <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+
+    <!-- Web Components -->
+    <script src="/bower_components/platform/platform.js"></script>
+    <link rel="import" href="/comps/ttny-footer.html">
+    <link rel="import" href="/comps/ttny-head.html">
+
+    <!-- Scripts -->
+    <script>
+      function parallax(){
+          var title = document.getElementById('title');
+          var skyline = document.getElementById('skyline');
+          title.style.top = -(window.pageYOffset / 8 - 60)+'px';
+          skyline.style.top = -(window.pageYOffset / 4 - 60)+'px';
+        }
+      window.addEventListener("scroll", parallax, false);
+
+      //Nav bar fade in
+      var op_per_pixel = 1 / 265
+      window.onscroll = function toggleNave(){
+        var op = (window.pageYOffset * op_per_pixel) > 1 ? 1 : (window.pageYOffset * op_per_pixel)
+        document.getElementById("header").style.opacity = op;
+
+      }
+    </script>
+</head>

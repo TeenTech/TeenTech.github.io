@@ -1,0 +1,227 @@
+html, body {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0;
+}
+body {
+  background-color: #282822;
+}
+h1 {
+  margin:0;
+}
+
+h2 {
+  margin-top: 5px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:focus{
+  color: lighten(rgb(135,75,145), 20%)
+}
+  
+
+/* ===========================================
+ Banner Styles
+=========================================== */
+#skyline {
+    position: fixed;
+    margin: 0px auto;
+    right: 0px;
+    left: 0px;
+    max-width:1000px;
+  }
+
+#title {
+  position: fixed;
+  margin: 0px auto;
+  right: 0px;
+  left: 0px;
+  font-size: 6em;
+  font-weight: bold;
+}
+
+#banner {
+  height: 250px;
+  padding-top: 60px;
+  background-color: #282822;
+  font-family: Roboto, sans-serif;
+  color: white;
+  text-align: center;
+  position: relative; 
+}
+
+#logo{
+  height: 200px;
+  position: absolute;
+  top: 210px;
+  margin: 0 auto;
+  right: 0px;
+  left: 0px;
+  z-index:1;
+  border-radius: 200px;
+}
+
+/* ===========================================
+ Nav Styles
+=========================================== */
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background: rgb(38, 38, 38);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  font-size: 1.1em;
+  
+}
+nav * {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: rgba(255, 255, 255, 0.5);
+}
+#nav_left {
+  float:left;
+  padding-left: 75px;
+}
+#nav_right {
+  float:right;
+  padding-right: 50px;
+}
+
+/* ===========================================
+Sections
+old colors
+background-color: #FFF;
+background-color: yellow;
+background-color: #EB7300;
+=========================================== */
+.section_orange{
+  padding: 20px;
+  margin: 0 auto;
+  
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.section_white {
+  padding: 20px;
+  background-color: #ecf0f1;
+  color: gray;
+  text-align: center;
+  position: relative;
+}
+
+.section_yellow {
+  padding: 20px;
+  background-color: #f1c40f;
+  color: #282822;
+  text-align: center;
+  position: relative;
+}
+
+.section_orange{
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #e67e22;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.content_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* ===========================================
+Table styles
+=========================================== */
+.row{ 
+  display:table;
+  width: 100%;
+  margin: 0 auto;
+}
+.col {
+  display: table-cell;
+}
+
+.sky_max {
+  max-width: 1000px;
+}
+
+/* ===========================================
+Speaher styles
+=========================================== */
+.speaker{
+	width: 300px;
+}
+
+.speaker_head{
+  max-width: 200px;
+  width: 100%; 
+  border-radius: 200px;
+}
+
+
+/* ===========================================
+FAQ styles
+=========================================== */
+#faq_wrapper p{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.faq_col{
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.faq_aq{
+  border-bottom:3px dotted gray;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* ===========================================
+Footer styles
+=========================================== */
+#footer{
+    color:white; 
+    padding: 10px;
+    max-width:500px;
+    margin: 0 auto;
+}
+.page_link{
+    padding:20px;
+}
+
+/* ===========================================
+Partner Logo styles
+=========================================== */
+.partner_row1{
+  width: 50%;
+}
+#unis_logo {
+ max-width: 250px;
+ width: 100%;
+}
+
+#ttsf_logo {
+  padding-left: 20px;
+  max-height: 100px;
+  height: 100%;
+}

@@ -1,0 +1,160 @@
+html, body {
+	font-family: Roboto, sans-serif;
+	margin: 0;
+}
+body {
+	background-color: #282822;
+	font-size: 1.35em;
+}
+h1 {
+	margin:0;
+}
+
+h2 {
+	margin-top: 5px;
+}
+
+/* ===========================================
+ Banner Styles
+=========================================== */
+#skyline {
+		position: fixed;
+		margin: 0px auto;
+		right: 0px;
+		left: 0px;
+	}
+
+#title {
+	position: fixed;
+	margin: 0px auto;
+	right: 0px;
+	left: 0px;
+	font-size: 6em;
+	font-weight: bold;
+}
+
+#banner {
+	height: 250px;
+	padding-top: 60px;
+	background-color: #282822;
+	font-family: Roboto, sans-serif;
+	color: white;
+	text-align: center;
+	position: relative;	
+}
+
+/* ===========================================
+ Nav Styles
+=========================================== */
+
+nav {
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	background: rgb(38, 38, 38);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	opacity: 0;
+	font-size: 1.1em;
+	
+}
+nav * {
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: rgba(255, 255, 255, 0.5);
+}
+#nav_left {
+	float:left;
+	padding-left: 75px;
+}
+#nav_right {
+	float:right;
+	padding-right: 50px;
+}
+
+/* ===========================================
+Sections
+=========================================== */
+.section_white {
+	padding: 20px;
+	background-color: #FFF;
+	color: gray;
+	text-align: center;
+	position: relative;
+}
+
+.section_yellow {
+	padding: 20px;
+	background-color: yellow;
+	color: #282822;
+	text-align: center;
+	position: relative;
+}
+
+.section_orange{
+	padding: 20px;
+	margin: 0 auto;
+	background-color: #EB7300;
+	color: white;
+	text-align: center;
+	position: relative;
+}
+
+
+.row{ 
+	display:table;
+	width: 100%;
+	margin: 0 auto;
+}
+.col {
+	display: table-cell;
+}
+
+.text p{
+	margin: 0;
+	padding-bottom: 1em;
+	margin-left: 100px;
+	margin-right: 100px;
+	line-height:1.5;
+}
+
+.sky_max {
+	max-width: 1000px;
+}
+
+/* ===========================================
+FAQ styles
+=========================================== */
+.text #faq_wrapper p{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.faq_col{
+	width: 50%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.faq_aq{
+	border-bottom:3px dotted gray;
+	padding-right: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+/* ===========================================
+Partner Logo styles
+=========================================== */
+#mgwu_logo {
+	width: 350px;
+}
+
+#ttsf_logo {
+	padding-left: 20px;
+}
