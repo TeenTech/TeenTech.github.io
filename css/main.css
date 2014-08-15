@@ -107,55 +107,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===========================================
- Nav Styles
-=========================================== */
-
-nav {
-  visibility: hidden;
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-  background: rgb(38, 38, 38);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  font-size: 16px;
-  
-}
-nav * {
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-}
-
-nav a:hover{
-  color: rgba(255, 255, 255, 0.5);
-}
-#nav_left {
-  float:left;
-  padding-left: 75px;
-}
-#nav_right {
-  float:right;
-  padding-right: 50px;
-}
-
-/* ===========================================
 Sections
 old colors
 background-color: #FFF;
 background-color: yellow;
 background-color: #EB7300;
 =========================================== */
-.section_orange{
-  padding: 20px;
-  margin: 0 auto;
-  
-  color: white;
-  text-align: center;
-  position: relative;
-}
-
 .section_white {
   padding: 20px;
   background-color: #ecf0f1;
@@ -258,6 +215,7 @@ Partner Logo styles
 .partner_row1{
   width: 50%;
 }
+
 #unis_logo {
  max-width: 250px;
  width: 100%;
@@ -289,6 +247,10 @@ Media
 }
 
 @media only screen and (max-device-width: 360px)  {
+	#skyline {
+		top: 40px;
+	}
+	
 	#title {
 		padding-top: 0;
 	}

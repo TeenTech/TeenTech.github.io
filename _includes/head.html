@@ -21,8 +21,9 @@
       function parallax(){
           var title = document.getElementById('title');
           var skyline = document.getElementById('skyline');
-          title.style.top = -(window.pageYOffset / 8 )+'px';
+          title.style.top = -(window.pageYOffset / 8)+'px';
           skyline.style.top = -(window.pageYOffset / 4)+'px';
+          
         }
       window.addEventListener("scroll", parallax, false);
 
