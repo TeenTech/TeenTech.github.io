@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #banner {
   height: 250px;
-  padding-top: 60px;
+ /* padding-top: 60px; */
   background-color: #282822;
   font-family: Roboto, sans-serif;
   color: white;
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 #logo{
   height: 200px;
   position: absolute;
-  top: 210px;
+  top: 150px;
   margin: 0 auto;
   right: 0px;
   left: 0px;
@@ -238,6 +238,7 @@ FAQ styles
 }
 
 
+
 /* ===========================================
 Footer styles
 =========================================== */
@@ -265,5 +266,30 @@ Partner Logo styles
 #ttsf_logo {
   padding-left: 20px;
   max-height: 100px;
+  max-width: 100px;
   height: 100%;
+}
+
+/* ===========================================
+Media
+=========================================== */
+@media only screen and (max-device-width: 500px)  {
+	.faq_col{
+		width: 100%;
+	}
+	.col{
+		display: initial;
+	}
+	
+	#title {
+		padding-top: 25px;
+		font-size: 80px;
+		line-height: 1;
+	}
+}
+
+@media only screen and (max-device-width: 360px)  {
+	#title {
+		padding-top: 0;
+	}
 }

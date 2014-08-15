@@ -16,27 +16,15 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
 
-    <!-- Web Components -->
-    <script src="/bower_components/platform/platform.js"></script>
-    <link rel="import" href="/comps/ttny-footer.html">
-    <link rel="import" href="/comps/ttny-head.html">
-
     <!-- Scripts -->
     <script>
       function parallax(){
           var title = document.getElementById('title');
           var skyline = document.getElementById('skyline');
-          title.style.top = -(window.pageYOffset / 8 - 60)+'px';
-          skyline.style.top = -(window.pageYOffset / 4 - 60)+'px';
+          title.style.top = -(window.pageYOffset / 8 )+'px';
+          skyline.style.top = -(window.pageYOffset / 4)+'px';
         }
       window.addEventListener("scroll", parallax, false);
 
-      //Nav bar fade in
-      var op_per_pixel = 1 / 265
-      window.onscroll = function toggleNave(){
-        var op = (window.pageYOffset * op_per_pixel) > 1 ? 1 : (window.pageYOffset * op_per_pixel)
-        document.getElementById("header").style.opacity = op;
-
-      }
     </script>
 </head>
