@@ -195,6 +195,52 @@ FAQ styles
 }
 
 
+/* ===========================================
+ Team head styles
+=========================================== */
+.pic {
+	height:200px; 
+	width: 200px;
+	margin:0 auto;
+	background-size: cover;
+	background-position: 50% 50%;
+	border-radius: 200px;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.pic_name {
+	height:200px; 
+	width: 200px;
+	border-radius:200px;
+	background-color: rgba(0, 0, 0, 0.00);
+	color: rgba(255, 255, 255, 0.00);
+	
+}
+.pic_name span{
+	top:75px;
+	position:relative;
+}
+
+.pic_name:hover {
+	-webkit-animation: fadeInName 1s forwards;
+	animation: fadeInName 1s forwards;	
+}
+
+@-webkit-keyframes fadeInName {
+	from {background-color: rgba(0, 0, 0, 0.00);
+		color: rgba(255, 255, 255, 0.00);}
+    to {background-color: rgba(0, 0, 0, 0.25);
+	color: rgba(255, 255, 255, 1);}
+}
+
+@keyframes fadeInName {
+	from {background-color: rgba(0, 0, 0, 0.00);
+		color: rgba(255, 255, 255, 0.00);}
+    to {background-color: rgba(0, 0, 0, 0.5);
+	color: rgba(255, 255, 255, 1);}
+}
+
 
 /* ===========================================
 Footer styles
@@ -231,7 +277,7 @@ Partner Logo styles
 /* ===========================================
 Media
 =========================================== */
-@media only screen and (max-device-width: 500px)  {
+@media only screen and (max-device-width: 570px)  {
 	.faq_col{
 		width: 100%;
 	}
@@ -246,7 +292,7 @@ Media
 	}
 }
 
-@media only screen and (max-device-width: 360px)  {
+@media only screen and (max-device-width: 480px)  {
 	#skyline {
 		top: 40px;
 	}
