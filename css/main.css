@@ -258,20 +258,33 @@ Footer styles
 /* ===========================================
 Partner Logo styles
 =========================================== */
-.partner_row1{
+.partner_row2{
   width: 50%;
+  padding-bottom: 10px;
 }
 
 #unis_logo {
- max-width: 250px;
- width: 100%;
+ max-width: 100%;
+ width: auto;
+ max-height: 150px
+}
+
+#microsoft_logo{
+ max-width: 100%;
+ width: auto;
+ max-height: 150px
 }
 
 #ttsf_logo {
-  padding-left: 20px;
-  max-height: 100px;
-  max-width: 100px;
-  height: 100%;
+ max-width: 100%;
+ width: auto;
+ max-height: 120px
+}
+
+#indiegogo_logo {
+ max-width: 100%;
+ width: auto;
+ max-height: 120px
 }
 
 /* ===========================================
