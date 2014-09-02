@@ -65,6 +65,18 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
+hr{
+  clear: both;
+  margin: 30px 0 30px;
+
+  border: 0;
+  height: 1px;
+  background: #f1c40f;
+  background-image: -webkit-linear-gradient(left,  #f1c40f, green, #538ec4, purple,  #f1c40f);
+  background-image: -moz-linear-gradient(left, #ff7878, #fabe5a, #f1c40f, #5ff05f, #6969eb, #b450fa, #ff7dff);
+  background-image: -ms-linear-gradient(left, #ff7878, #fabe5a, #f1c40f, #5ff05f, #6969eb, #b450fa, #ff7dff);
+  background-image: -o-linear-gradient(left, #ff7878, #fabe5a, #f1c40f, #5ff05f, #6969eb, #b450fa, #ff7dff);
+}
 /* ===========================================
  Banner Styles
 =========================================== */
