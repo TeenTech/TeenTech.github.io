@@ -118,6 +118,107 @@ hr{
   border-radius: 200px;
 }
 
+.fake_button{
+  background-color: #538ec4;
+  background-image: -webkit-linear-gradient(top, #538ec4, #4082be);
+  display: inline;
+  color: #ecf0f1;
+  padding: 5px 10px;
+  font-weight: normal;
+  border-radius: 5px;
+}
+
+.fake_button :hover {
+  background-color: red;
+}
+
+/* BUTTONS */
+
+.button,
+button,
+input[type="button"],
+input[type="image"],
+input[type="reset"],
+input[type="submit"] {
+  background: -moz-linear-gradient(top, #538ec4, #4082be);
+  background: -ms-linear-gradient(top, #538ec4, #4082be);
+  background: -o-linear-gradient(top, #538ec4, #4082be);
+  background: -webkit-linear-gradient(top, #538ec4, #4082be);
+  background: linear-gradient(top, #538ec4, #4082be);
+
+  border: 1px solid #c6c6c6;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 4px;
+
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+
+  cursor: default;
+
+  color: #ecf0f1;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.6;
+
+  margin: 0;
+  min-width: 72px;
+  outline: 0;
+  padding: 10px 15px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0;
+}
+
+.button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="image"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background: -moz-linear-gradient(top, #4B80B0, #cbcbcb);
+  background: -ms-linear-gradient(top, #d2d2d2, #cbcbcb);
+  background: -o-linear-gradient(top, #d2d2d2, #cbcbcb);
+  background: -webkit-linear-gradient(top, #508bc1, #4082be);
+  background: linear-gradient(top, #d2d2d2, #cbcbcb);
+  border: 1px solid #c6c6c6;
+  color: #F5F5F5;
+  text-decoration: none;
+}
+
+
+.button:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="image"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  -moz-box-shadow: inset 0 0 0 1px #d6d6d6;
+  -webkit-box-shadow: inset 0 0 0 1px #d6d6d6;
+  box-shadow: inset 0 0 0 1px #d6d6d6;
+}
+
+.button:active,
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  background: -moz-linear-gradient(top, #d2d2d2, #cbcbcb);
+  background: -ms-linear-gradient(top, #d2d2d2, #cbcbcb);
+  background: -o-linear-gradient(top, #d2d2d2, #cbcbcb);
+  background: -webkit-linear-gradient(top, #508bc1, #4082be);
+  background: linear-gradient(top, #d2d2d2, #cbcbcb);
+  border: 1px solid #ccc;
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+  color: #E0E0E0;
+}
 /* ===========================================
 Sections
 old colors
@@ -175,16 +276,20 @@ Table styles
 Speaher styles
 =========================================== */
 .speaker{
-	max-width: 50%;
-	width: 300px;
+	width: 500px;
+	padding: 10px;
 }
-
+.sr{
+  max-width: 1000px;
+}
 .speaker_head{
   max-width: 200px;
   width: 100%; 
   border-radius: 200px;
 }
-
+.about_speaker h3{
+  margin-bottom: 0;
+}
 
 /* ===========================================
 FAQ styles
