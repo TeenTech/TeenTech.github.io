@@ -2,5 +2,5 @@
 layout: page
 ---
 
-Unfortunaly signup is not yet open
+Unfortunately sign-up is not yet open
 

@@ -4,17 +4,49 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
+
+    <!-- Google Authorship and Publisher Markup -->
+    <link rel="publisher" href="https://plus.google.com/b/116170360752298759321" />
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta itemprop="description" content="{{ site.description }}">
+    <meta itemprop="image" content="http://teentechny.org/images/favicon.png">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@teentechny">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="http://teentechny.org/images/favicon.png">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:type" content="{{ site.description }}" />
+    <meta property="og:url" content="http://teentechny.org/" />
+    <meta property="og:image" content="hhttp://teentechny.org/images/favicon.png" />
+    <meta property="og:description" content="Description Here" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+
+
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-
-    
     <link rel="icon" type="image/png" href="/images/favicon.png?v=2">
-    <!-- Styles -->
+    <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- Anyltics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-
+      ga('create', 'UA-52643823-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 
 </head>
