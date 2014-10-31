@@ -1,10 +1,17 @@
 # Site settings
-title: Teen Tech NY
-description: "TeenTech is an interactive tech community run by teens for teens."
+title: TeenTech NY
+email: contact@teentechny.org
+description: "TeenTech Yeah"
 baseurl: ""
 url: "http://teentechny.org"
-
+twitter_username: teentechny
+facebook_username:  OfficialTeenTechNY
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+pygments: true
+
+sass:
+    sass_dir: css/
+    

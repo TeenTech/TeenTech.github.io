@@ -1,0 +1,43 @@
+/* Site footer */
+
+.site-footer {
+  padding: 30px 0;
+  max-width: 100%;
+  overflow: hidden;
+  
+  .wrap {
+  	display: table;
+  	max-width: 800px;
+    margin: 0 auto;
+  }
+  .column { 
+  	display: table-cell;
+  	marign-bottom: 15px;
+  	padding: 0 5px; 
+  	width: 33%;
+  }
+  
+  ul { 
+  	list-style: none;
+  	padding: 0;
+   }
+}
+
+
+
+.site-footer li,
+.site-footer p {
+  font-size: 15px;
+  letter-spacing: -.3px;
+  color: $accent-color;
+}
+
+.github-icon-svg,
+.twitter-icon-svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+}
+

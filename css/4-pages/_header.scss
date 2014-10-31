@@ -1,0 +1,51 @@
+.site-header {
+	#site-title{
+		text-align:center;
+		a{
+		  color: $titile-color;
+		}
+	}
+	
+	#tag-line{
+		text-align:center;
+		color: $titile-color;
+	
+	}
+	#nav {
+		float: left;
+		padding-left: 30px;
+		position: relative;
+		top: -220px;
+		
+		.page-link {
+			padding-right: 10px;
+		}
+	}
+
+	.logo{
+		height: 0;
+		align-content: center;
+		svg{
+			max-height: 300px;
+			position: relative;
+			top: -200px;
+			z-index: -1;
+		}
+	
+	}
+}
+
+@media only screen and (max-device-width: 390px)  {
+	.site-header #site-title {
+		margin-top: 22px;
+		margin-bottom: 0;	
+	}
+	.site-header #tag-line {
+		margin-top: 0;	
+	}
+}
+@media only screen and (max-device-width: 285px)  {
+	.site-header #tag-line {
+		margin-bottom: 0;	
+	}
+}

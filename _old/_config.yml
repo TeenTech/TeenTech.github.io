@@ -1,0 +1,10 @@
+# Site settings
+title: Teen Tech NY
+description: "TeenTech is an interactive tech community run by teens for teens."
+baseurl: ""
+url: "http://teentechny.org"
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty

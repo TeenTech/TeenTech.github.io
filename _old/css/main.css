@@ -1,0 +1,433 @@
+html, body {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0;
+}
+body {
+  background-color: #282822;
+}
+h1 {
+  margin:0;
+}
+
+h2 {
+  margin-top: 5px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:focus{
+  color: lighten(rgb(135,75,145), 20%)
+}
+  
+/* ===========================================
+Fonts
+=========================================== */
+.gigantic, .huge, .large, .bigger, .big, 
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+  
+
+.gigantic{
+	font-size: 110px;
+	line-height: 1.09;
+	letter-spacing: -2px;
+ }
+
+.huge, h1{
+  font-size: 68px;
+  line-height: 1.05;
+  letter-spacing: -1px;
+ }
+
+.large, h2{
+  font-size: 42px;
+  line-height: 1.14;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 1.38;
+}
+  
+.big, h4{
+  font-size: 22px;
+  line-height: 1.38;
+}
+
+.small, small {
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+hr{
+  clear: both;
+  margin: 30px 0 30px;
+
+  border: 0;
+  height: 1px;
+  background: #f1c40f;
+  background-image: -webkit-linear-gradient(left,  #f1c40f, green, #538ec4, purple,  #f1c40f);
+  background-image: -moz-linear-gradient(left, #ff7878, #fabe5a, #f1c40f, #5ff05f, #6969eb, #b450fa, #ff7dff);
+  background-image: -ms-linear-gradient(left, #ff7878, #fabe5a, #f1c40f, #5ff05f, #6969eb, #b450fa, #ff7dff);
+  background-image: -o-linear-gradient(left, #ff7878, #fabe5a, #f1c40f, #5ff05f, #6969eb, #b450fa, #ff7dff);
+}
+/* ===========================================
+ Banner Styles
+=========================================== */
+#skyline {
+    position: fixed;
+    margin: 0px auto;
+    right: 0px;
+    left: 0px;
+    max-width:1000px;
+  }
+
+#title {
+  position: fixed;
+  margin: 0px auto;
+  right: 0px;
+  left: 0px;
+  font-size: 6em;
+  font-weight: bold;
+}
+
+#banner {
+  height: 250px;
+ /* padding-top: 60px; */
+  background-color: #282822;
+  font-family: Roboto, sans-serif;
+  color: white;
+  text-align: center;
+  position: relative; 
+}
+
+#logo{
+  height: 200px;
+  position: absolute;
+  top: 150px;
+  margin: 0 auto;
+  right: 0px;
+  left: 0px;
+  z-index:1;
+  border-radius: 200px;
+}
+
+.fake_button{
+  background-color: #538ec4;
+  background-image: -webkit-linear-gradient(top, #538ec4, #4082be);
+  display: inline;
+  color: #ecf0f1;
+  padding: 5px 10px;
+  font-weight: normal;
+  border-radius: 5px;
+}
+
+.fake_button :hover {
+  background-color: red;
+}
+
+/* BUTTONS */
+
+.button,
+button,
+input[type="button"],
+input[type="image"],
+input[type="reset"],
+input[type="submit"] {
+  background: -moz-linear-gradient(top, #538ec4, #4082be);
+  background: -ms-linear-gradient(top, #538ec4, #4082be);
+  background: -o-linear-gradient(top, #538ec4, #4082be);
+  background: -webkit-linear-gradient(top, #538ec4, #4082be);
+  background: linear-gradient(top, #538ec4, #4082be);
+
+  border: 1px solid #c6c6c6;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 4px;
+
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+
+  cursor: default;
+
+  color: #ecf0f1;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.6;
+
+  margin: 0;
+  min-width: 72px;
+  outline: 0;
+  padding: 10px 15px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0;
+}
+
+.button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="image"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background: -moz-linear-gradient(top, #4B80B0, #cbcbcb);
+  background: -ms-linear-gradient(top, #d2d2d2, #cbcbcb);
+  background: -o-linear-gradient(top, #d2d2d2, #cbcbcb);
+  background: -webkit-linear-gradient(top, #508bc1, #4082be);
+  background: linear-gradient(top, #d2d2d2, #cbcbcb);
+  border: 1px solid #c6c6c6;
+  color: #F5F5F5;
+  text-decoration: none;
+}
+
+
+.button:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="image"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  -moz-box-shadow: inset 0 0 0 1px #d6d6d6;
+  -webkit-box-shadow: inset 0 0 0 1px #d6d6d6;
+  box-shadow: inset 0 0 0 1px #d6d6d6;
+}
+
+.button:active,
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  background: -moz-linear-gradient(top, #d2d2d2, #cbcbcb);
+  background: -ms-linear-gradient(top, #d2d2d2, #cbcbcb);
+  background: -o-linear-gradient(top, #d2d2d2, #cbcbcb);
+  background: -webkit-linear-gradient(top, #508bc1, #4082be);
+  background: linear-gradient(top, #d2d2d2, #cbcbcb);
+  border: 1px solid #ccc;
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+  color: #E0E0E0;
+}
+/* ===========================================
+Sections
+old colors
+background-color: #FFF;
+background-color: yellow;
+background-color: #EB7300;
+=========================================== */
+.section_white {
+  padding: 20px;
+  background-color: #ecf0f1;
+  color: gray;
+  text-align: center;
+  position: relative;
+}
+
+.section_yellow {
+  padding: 20px;
+  background-color: #f1c40f;
+  color: #282822;
+  text-align: center;
+  position: relative;
+}
+
+.section_orange{
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #e67e22;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.content_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* ===========================================
+Table styles
+=========================================== */
+.row{ 
+  display:table;
+  width: 100%;
+  margin: 0 auto;
+}
+.col {
+  display: table-cell;
+}
+
+.sky_max {
+  max-width: 1000px;
+}
+
+/* ===========================================
+Speaher styles
+=========================================== */
+.speaker{
+	width: 500px;
+	padding: 10px;
+}
+.sr{
+  max-width: 1000px;
+}
+.speaker_head{
+  max-width: 200px;
+  width: 100%; 
+  border-radius: 200px;
+}
+.about_speaker h3{
+  margin-bottom: 0;
+}
+
+/* ===========================================
+FAQ styles
+=========================================== */
+#faq_wrapper p{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.faq_col{
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.faq_aq{
+  border-bottom:3px dotted gray;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* ===========================================
+ Team head styles
+=========================================== */
+.pic {
+	height:200px; 
+	width: 200px;
+	margin:0 auto;
+	background-size: cover;
+	background-position: 50% 50%;
+	border-radius: 200px;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.pic_name {
+	height:200px; 
+	width: 200px;
+	border-radius:200px;
+	background-color: rgba(0, 0, 0, 0.00);
+	color: rgba(255, 255, 255, 0.00);
+	
+}
+.pic_name span{
+	top:75px;
+	position:relative;
+}
+
+.pic_name:hover {
+	-webkit-animation: fadeInName 1s forwards;
+	animation: fadeInName 1s forwards;	
+}
+
+@-webkit-keyframes fadeInName {
+	from {background-color: rgba(0, 0, 0, 0.00);
+		color: rgba(255, 255, 255, 0.00);}
+    to {background-color: rgba(0, 0, 0, 0.25);
+	color: rgba(255, 255, 255, 1);}
+}
+
+@keyframes fadeInName {
+	from {background-color: rgba(0, 0, 0, 0.00);
+		color: rgba(255, 255, 255, 0.00);}
+    to {background-color: rgba(0, 0, 0, 0.5);
+	color: rgba(255, 255, 255, 1);}
+}
+
+
+/* ===========================================
+Footer styles
+=========================================== */
+#footer{
+    color:white; 
+    padding: 10px;
+    max-width:500px;
+    margin: 0 auto;
+}
+.page_link{
+    padding:20px;
+}
+
+/* ===========================================
+Partner Logo styles
+=========================================== */
+.partner_row2{
+  width: 50%;
+  padding-bottom: 10px;
+}
+
+#unis_logo {
+ max-width: 100%;
+ width: auto;
+ max-height: 150px
+}
+
+#microsoft_logo{
+ max-width: 100%;
+ width: auto;
+ max-height: 150px
+}
+
+#ttsf_logo {
+ max-width: 100%;
+ width: auto;
+ max-height: 120px
+}
+
+#indiegogo_logo {
+ max-width: 100%;
+ width: auto;
+ max-height: 120px
+}
+
+/* ===========================================
+Media
+=========================================== */
+@media only screen and (max-device-width: 570px)  {
+	.faq_col{
+		width: 100%;
+	}
+	.col{
+		display: initial;
+	}
+	
+	#title {
+		padding-top: 25px;
+		font-size: 80px;
+		line-height: 1;
+	}
+}
+
+@media only screen and (max-device-width: 480px)  {
+	#skyline {
+		top: 40px;
+	}
+	
+	#title {
+		padding-top: 0;
+	}
+}
