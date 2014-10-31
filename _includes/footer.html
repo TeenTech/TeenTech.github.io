@@ -1,0 +1,35 @@
+<footer class="site-footer">
+
+  <div class="wrap">
+
+    <div class="column">
+      <ul>
+        <li>{{ site.title }}</li>
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <ul>
+        {% if site.facebook_username %}<li>
+          <a href="https://facebook.com/{{ site.facebook_username }}">
+            <i class="icon fa fa-facebook"></i>
+            <span class="username"> {{ site.facebook_username }}</span>
+          </a>
+        </li>{% endif %}
+        {% if site.twitter_username %}<li>
+          <a href="https://twitter.com/{{ site.twitter_username }}">
+            <i class="icon fa fa-twitter"></i>
+            <span class="username"> {{ site.twitter_username }}</span>
+          </a>
+        </li>{% endif %}
+      </ul>
+    </div>
+
+    <div class="column">
+      <p class="text">Copyright © 2014 TeenTech NY</p>
+    </div>
+
+  </div>
+
+</footer>

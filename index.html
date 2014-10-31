@@ -1,0 +1,60 @@
+---
+layout: frontPage
+---
+
+<div class="index-row-1">
+	<div id="about" class="col-1">
+		<h3> About Us </h3>
+		<p> TeenTech is an interactive tech community run by teens for teens. Partnered with TeenTechSF, we have connected over 500 students with 81 tech mentors from Apple, Electronic Arts, Google, Khan Academy, LinkedIn, NASA, Oracle Team USA, and Zynga. </p>
+
+		<p> Headquartered in New York City, TeenTech NY and TeenTech SF are bi-coastal founding partners in the TeenTech GLOBAL network, bringing the spirit of Silicon Valley and Silicon Alley to the rest of the world. We aim to partner with tech professionals on any and every level to help achieve our vision of inclusivity and community. Our goal is to help high schoolers discover the possibilities of tech and promote diversity in the of the field. Technology has the power to change the world, just have to realize it’s potential! </p>
+	</div>
+
+	<div class="col-2">
+		<div class="image_wrap" style="max-width: 420px;">
+			<img src="/images/team.jpg"/>
+		</div>
+	</div>
+
+	<div style='clear:both;'></div>
+</div>
+
+<hr/>
+
+
+<div class="index-row-2">
+	<div class="col-1">
+		<h2> The Team </h2>
+		<p> The Teen Tech NY team is comprised of tech leaders from the United Nations School each with their own unique stories </p>
+	</div>
+	<div class="col-2">
+		<div class="faces">	
+		{% for member in site.data.team %}
+			
+				<div class="face_wrap">
+					<div class="face" style="background-image: url(/images/team/{{ member.name_normal }}.jpg)">
+						<div class="pic_name">
+						<span> {{ member.name }} </span>
+						</div>
+					</div>
+				</div>
+			
+		{% endfor %}
+		<div style='clear:both;'></div>				
+		</div>
+	</div>
+	<div style='clear:both;'></div>
+</div>
+<hr/>
+
+<div style="text-align: center;">
+	<h2> In Partnership With</h2>
+	<div class="logos">
+		<a href="http://www.unis.org">
+			<img class="partner_logo" src="/images/logos/unis.png"/>
+		</a>
+		<a href="http://teentechsf.org">
+			<img class="partner_logo" src="/images/logos/ttsf.png"/>
+		</a>
+	</div>
+</div>
