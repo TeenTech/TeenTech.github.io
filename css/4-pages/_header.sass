@@ -1,0 +1,27 @@
+.nav
+	position: absolute
+	color: white
+	margin: 40px 
+	
+
+	ul
+		list-style: none
+		margin: 0
+		padding: 0
+		
+		li
+			display: inline
+			float: left
+
+			a
+				color: white
+				display: block
+				width: 100px
+
+			a:hover, a:focus
+				text-decoration: underline
+				color: lighten($link-color, 20%)
+
+@media only screen and (max-device-width: 900px)
+	.nav
+		margin: 0
