@@ -8,8 +8,10 @@ layout: wide
 			{% assign speaker = speaker_hash[1] %}
 			<li>
 				<div class="speaker">
-					<img class="speaker_head" src="/images/orgs/{{ speaker.org_normal }}/{{ speaker.name_normal }}.png">
-					<h3> <a href="./{{ speaker.name_normal }}" > {{ speaker.name }} </a> </h3>
+					<a href="./{{ speaker.name_normal }}" > 
+						<img class="speaker_head" src="/images/orgs/{{ speaker.org_normal }}/{{ speaker.name_normal }}.png">
+						<h3> {{ speaker.name }} </h3>
+					</a>
 					<span> {{ speaker.title }} {% if speaker.org %} @ {{ speaker.org }} {% endif %} </span>
 				</div>
 			</li>
