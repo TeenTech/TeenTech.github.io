@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1000px" height="1000px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<g>
+	<defs>
+		<circle id="SVGID_1_" cx="500" cy="499.999" r="475"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="24" y1="257" x2="490" y2="257">
+		<stop  offset="0" style="stop-color:#ED8119"/>
+		<stop  offset="1" style="stop-color:#EB7300"/>
+	</linearGradient>
+	<path clip-path="url(#SVGID_2_)" fill="url(#SVGID_3_)" d="M490,24H24v466h466V24z M453,212h-81v241h-56V212h-82v-44h219V212z"/>
+	<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="510" y1="742.5" x2="975" y2="742.5">
+		<stop  offset="0" style="stop-color:#E05D86"/>
+		<stop  offset="1" style="stop-color:#DC4B78"/>
+	</linearGradient>
+	<path clip-path="url(#SVGID_2_)" fill="url(#SVGID_4_)" d="M510,975h465V510H510V975z M604.397,549l61.271,130h1.153l61.272-130
+		h61.656L694,732.295V833h-55V729.362L542.75,549H604.397z"/>
+	<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="510" y1="257" x2="975" y2="257">
+		<stop  offset="0" style="stop-color:#F2CA27"/>
+		<stop  offset="1" style="stop-color:#F1C40F"/>
+	</linearGradient>
+	<path clip-path="url(#SVGID_2_)" fill="url(#SVGID_5_)" d="M510,24v466h465V24H510z M766,212h-80v241h-57V212h-80v-44h217V212z"/>
+	<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="24" y1="742.5" x2="490" y2="742.5">
+		<stop  offset="0" style="stop-color:#538EC4"/>
+		<stop  offset="1" style="stop-color:#4082BE"/>
+	</linearGradient>
+	<path clip-path="url(#SVGID_2_)" fill="url(#SVGID_6_)" d="M24,510v465h466V510H24z M449,833h-59.968L271.297,638.016L271,637.96
+		V833h-61V549h59.174l118.631,193.785l1.195-0.944V549h60V833z"/>
+</g>
+</svg>
