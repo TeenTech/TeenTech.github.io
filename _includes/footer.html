@@ -2,6 +2,7 @@
 
   <div class="wrap">
 
+
     <div class="column">
       <ul>
         <li>{{ site.title }}</li>
@@ -24,10 +25,17 @@
           </a>
         </li>{% endif %}
       </ul>
+      {% if site.instagram_username %}<li>
+          <a href="https://instagram.com/{{ site.instagram_username }}">
+            <i class="icon fa fa-instagram"></i>
+            <span class="username"> {{ site.instagram_username }}</span>
+          </a>
+        </li>{% endif %}
+      </ul>
     </div>
 
     <div class="column">
-      <p class="text">Copyright © 2014 TeenTech NY</p>
+      <p class="text">Copyright © 2015 TeenTech NY</p>
     </div>
 
   </div>
