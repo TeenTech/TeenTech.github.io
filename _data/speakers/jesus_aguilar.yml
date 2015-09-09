@@ -1,0 +1,19 @@
+name: Jesus Aguilar
+name_normal: jesus_aguilar
+org: Microsoft
+org_normal: microsoft
+org_logo: true
+title: Senior Technical Evangelist
+bio: 
+  - Jesus Aguilar is a Sr. Technical Evangelist at Microsoft. He is focused on Microsoft Azure, back-end, data and enterprise development. He’s a speaker, blogger, passionate developer and a cloud fanatic. You will catch his attention by using terms such as “Scalability”, “Minimum Viable Product” and “<Choose any Letter >aaS”.
+
+social:
+  - type: twitter
+    icon: fa-twitter
+    user_name: "@giventocode"
+    url: https://twitter.com/giventocode
+
+  - type: blog
+    icon: fa-pencil
+    user_name: "giventocode"
+    url: http://giventocode.com 

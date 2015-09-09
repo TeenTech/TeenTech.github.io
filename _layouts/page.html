@@ -1,20 +1,14 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
+<div class="post">
 
-	{% include head.html %}
+  <header class="post-header">
+    <h1>{{ page.title }} {% if page.description %} <span class="big" style="font-weight: normal;"> - {{ page.description }} </span>{% endif %}</h1>
+  </header>
 
-	<body>
+  <article class="post-content">
+  	{{ content }}
+  </article>
 
-		{% include header.html %}
-
-		<div class="section_white wrap">
-			<div class="content_wrap">
-				{{ content }}
-			</div>
-		</div>
-
-		{% include footer.html %}
-		{% include scripts.js %}
-
-	</body>
-</html>
+</div>

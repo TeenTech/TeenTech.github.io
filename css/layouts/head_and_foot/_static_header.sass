@@ -1,0 +1,83 @@
+.static_header
+	margin: 0 auto
+	max-width: 100%
+	width: 1920px
+	height: 250px
+	
+	.gigantic
+		color: white
+		margin: 5px
+		line-height: 1
+		max-width: 100% 
+
+	h2
+		margin: 5px
+		line-height: 1
+
+.static_overlay
+	position: absolute
+	z-index: 1
+	top: 30px
+	width: 1440px
+	max-width: 100% 
+	text-align: center
+
+.static_image
+	width: 100%
+	max-width: 200px
+	min-width: 150px
+	margin: 0 auto
+	opacity: 0.98
+
+	img
+		width: 100%
+		max-width: 200px
+		min-width: 150px
+
+.staticBG
+	z-index: 0
+	top: 0px
+	margin: 0 auto
+	width: 1000px
+	max-width: 100%
+	max-height: 100%
+	overflow: hidden
+	opacity: 0.5
+
+	span
+		position: absolute
+		top: 0px
+		line-height: 1
+		font-size: 150px
+		color: gray
+		z-index: -1
+		width: 1000px
+		text-align: center
+
+	.logo
+		width: 100%
+		max-width: 200px
+		min-width: 150px
+		position: absolute
+		margin: 0 auto
+		top: 30px
+		left: 0
+		right: 0
+		
+.noOp
+	opacity: 0
+
+.noOp:hover
+	opacity: 0.7
+
+@media only screen and (max-device-width: 743px)
+	.static_overlay
+		top: 0
+		height: 250px
+
+	.static_title
+		position: absolute
+		top: 40px
+		width: 100%
+
+

@@ -11,7 +11,7 @@
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta itemprop="description" content="{{ site.description }}">
-    <meta itemprop="image" content="http://teentechny.org/images/logo.png">
+    <meta itemprop="image" content="{{ site.logo_url }}">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
@@ -19,13 +19,13 @@
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta name="twitter:description" content="{{ site.description }}">
     <!-- Twitter summary card with large image must be at least 280x150px -->
-    <meta name="twitter:image:src" content="http://teentechny.org/images/logo.png">
+    <meta name="twitter:image:src" content="{{ site.logo_url }}">
 
     <!-- Open Graph data -->
     <meta property="og:title" content="{{ site.title }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://teentechny.org/" />
-    <meta property="og:image" content="http://teentechny.org/images/logo.png" />
+    <meta property="og:image" content="{{ site.logo_url }}" />
     <meta property="og:description" content="{{ site.description }}" />
     <meta property="og:site_name" content="{{ site.title }}" />
 
@@ -36,8 +36,9 @@
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="icon" type="image/png" href="/images/favicon.png?v=2">
     <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,300,400' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
     <!-- Anyltics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

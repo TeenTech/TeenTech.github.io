@@ -1,17 +1,43 @@
 <footer class="site-footer">
-	<div id="footer">
-	    <span class="page_link">
-	        <a href="/" style="color:white; text-decoration:none;">Home</a>
-	    </span>
-	    <span class="page_link">
-	        <a href="/contact/" style="color:white; text-decoration:none;">Contact Us</a>
-	    </span>
-	    <span class="page_link">
-	        <a href="/about/" style="color:white; text-decoration:none;">About</a>
-	    </span>
-	    <span class="page_link">
-	        <a href="http://blog.teentechny.org" style="color:white; text-decoration:none;">Blog</a>
-	    </span>
-	</div>
-	
- </footer>
+
+  <div class="wrap">
+
+
+    <div class="column">
+      <ul>
+        <li>{{ site.title }}</li>
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <ul>
+        {% if site.facebook_username %}<li>
+          <a href="https://facebook.com/{{ site.facebook_username }}">
+            <i class="icon fa fa-facebook"></i>
+            <span class="username"> {{ site.facebook_username }}</span>
+          </a>
+        </li>{% endif %}
+        {% if site.twitter_username %}<li>
+          <a href="https://twitter.com/{{ site.twitter_username }}">
+            <i class="icon fa fa-twitter"></i>
+            <span class="username"> {{ site.twitter_username }}</span>
+          </a>
+        </li>{% endif %}
+      </ul>
+      {% if site.instagram_username %}<li>
+          <a href="https://instagram.com/{{ site.instagram_username }}">
+            <i class="icon fa fa-instagram"></i>
+            <span class="username"> {{ site.instagram_username }}</span>
+          </a>
+        </li>{% endif %}
+      </ul>
+    </div>
+
+    <div class="column">
+      <p class="text">Copyright © 2015 TeenTech NY</p>
+    </div>
+
+  </div>
+
+</footer>

@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="speaker_page">
+
+  <div class="speaker_head_wrap">
+  	<img class="speaker_head" src="/images/orgs/{{ page.speaker_data.org_normal }}/{{ page.speaker_data.name_normal }}.png">
+  </div>
+
+  <div class="speaker_name">
+    <h1>{{ page.title }} </h1>
+  </div>
+
+
+  <div class="speaker_bio">
+  	{% for p in page.speaker_data.bio %}
+  		<p> {{ p }} </p>
+  	{% endfor %}
+  </div>
+
+  <div class="speaker_social">
+	{% for social in page.speaker_data.social %}
+		<a href="{{ social.url }}">
+			<i class="fa {{ social.icon }}"></i> {{ social.user_name }}
+		</a>
+  	{% endfor %}
+  </div>
+
+  <div class="org_logo">
+  	{% if page.speaker_data.org_logo %}
+  		<img src="/images/orgs/{{ page.speaker_data.org_normal }}/logo.png">
+  	{% elsif page.speaker_data.org %}
+  		<h1> {{ page.speaker_data.org }} </h1>
+  	{% endif %}
+  </div>
+</div>

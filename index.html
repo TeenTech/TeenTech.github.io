@@ -1,24 +1,91 @@
 ---
-layout: main
+layout: front_page
 ---
-    <div id="about" style="padding-top: 100px;" class="section_yellow text">
-    	<div class="content_wrap">
-    		{% include main/welcome.html %}
-    	</div>
-    </div>
-    <div id="speakers" class="section_white text">
-    	<div class="content_wrap">
-			{% include main/speakers.html %}
+<div class="index-row index-row-1">
+	<div id="about" class="col-1">
+		<h2> About Us </h2>
+
+		<p> TeenTech is an interactive community of like-minded individuals run by teens for teens. Headquartered in New York City, TeenTech NY and TeenTech SF are bi-coastal founding partners in the TeenTech GLOBAL network, bringing the spirit of Silicon Valley and Silicon Alley to the rest of the world. Our goal is to help high schoolers discover the possibilities of tech and promote diversity in the field. We do this by hosting various events throughout the year. Partnered with TeenTechSF, we have connected over 500 students with 81 tech mentors from organizations such as Apple, Cisco, EA, Google, Khan Academy, Indigogo, Microsoft, NASA, UBIsoft, West Point.</p>
+
+
+		<h3 class="tag_line"><i class="fa fa-quote-left"></i> Technology has the power to change the world, we just have to realize its potential! <i class="fa fa-quote-right"></i></h3>
+	</div>
+
+	<div class="col-2">
+		<div class="image_wrap" style="max-width: 420px;">
+			<img src="/images/team.jpg"/>
 		</div>
-    </div>
+	</div>
 
-    <div id="faq" class="section_orange text">
-		{% include main/faq.html %}
-    </div>
+	<div style='clear:both;'></div>
+</div>
 
-    <div id='partners' class="section_white">
-    	{% include main/partners.html %}
-    </div>
+<hr/>
 
+<div class="index-row">
+	<h2> Previous Events </h2>
+	 <span class="bigger"> <a href="{{ site.data.confs.ttg2014 }}"> TeenTech Global 2014 </a> - </span> Our first ever event. We had 100 students and 14 sessions lead by industry experts from organizations such as American Express, Idigogo, Mirosoft, UBIsoft and Westpoit.
+	 <br/>
+	 <div class="promo-video">
 
-    
+		<iframe src="//player.vimeo.com/video/111140027?title=0&amp;byline=0&amp;portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</div>
+</div>
+
+<hr/>
+<div class="index-row index-row-2">
+	<div class="col-2">
+		<h2> The Current Team </h2>
+		<p> The TeenTech NY team is comprised of tech leaders from the United Nations International School each with their own unique stories </p>
+	</div>
+	<div class="col-3">
+		<div class="faces">	
+		{% for member in site.data.team %}
+			
+				<div class="face_wrap">
+					<div class="face" style="background-image: url(/images/team/{{ member.name_normal }}.jpg)">
+						<div class="face_name">
+						<span> {{ member.name }} </span>
+						</div>
+					</div>
+				</div>
+			
+		{% endfor %}
+		<div style='clear:both;'></div>				
+		</div>
+	</div>
+	<div style='clear:both;'></div>
+</div>
+<hr/>
+
+<div style="text-align: center;">
+	<h2> In Partnership With</h2>
+	<div class="logos">
+		<a href="http://www.unis.org">
+			<img class="partner_logo" src="/images/logos/unis.png"/>
+		</a>
+		<a href="http://teentechsf.org">
+			<img class="partner_logo" src="/images/logos/ttsf.png"/>
+		</a>
+		<a href="http://microsoft.com">
+			<img class="partner_logo" src="/images/logos/microsoft.png"/>
+		</a>
+	</div>
+
+</div>
+
+<hr/>
+<div style="text-align: center;">
+	<h2> Special Thanks to our other Sponsors:</h2>
+	<div class="logos">
+		<a href="http://www.github.com">
+			<img class="partner_logo" src="/images/logos/github.png"/>
+		</a>
+		<a href="http://www.digitalocean.com">
+			<img class="partner_logo" src="/images/logos/digital_ocean.png"/>
+		</a>
+	</div>
+
+</div>
+
+<!-- <div style = "text-align: center;">	<img src="/images/skyline.png"> </div> -->
